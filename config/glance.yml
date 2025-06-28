@@ -1,0 +1,46 @@
+pages:
+  - name: Home
+    # Optionally, if you only have a single page you can hide the desktop navigation for a cleaner look
+    # hide-desktop-navigation: true
+    columns:
+      - size: small
+        widgets:
+          - type: calendar
+            first-day-of-week: sunday
+          
+          - type: weather
+            units: metric
+            hour-format: 24h
+            location: Sherbrooke, Quebec, Canada
+
+      - size: full
+        widgets:
+          - type: search
+            search-engine: google
+
+      - size: small
+        widgets:
+          - type: clock
+            hour-format: 24h
+            timezones:
+              - timezone: America/New_York
+                label: Sherbrooke
+              - timezone: Europe/Paris
+                label: France
+              - timezone: Asia/Kolkata
+                label: Pune
+
+          - type: markets
+            markets:
+              - symbol: AAPL
+                name: Apple
+              - symbol: GOOG
+                name: Google
+              - symbol: MSFT
+                name: Microsoft
+              - symbol: NVDA
+                name: NVIDIA
+              - symbol: SHOP
+                name: Shopify
+              - symbol: BTC-CAD
+                name: Bitcoin
